@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_link"
+    tools:context="com.example.abhijit.erhs_android.resetUsername">
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+        android:background="@drawable/button_background_green"
+        android:onClick="openLogin"
+        android:radius="30sp"
+        android:text="Reset"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="244dp"
+        tools:layout_editor_absoluteY="648dp" />
+
+    <Button
+        android:id="@+id/forgotuser"
+        android:layout_width="187dp"
+        android:layout_height="48dp"
+        android:background="@drawable/button_background_green"
+        android:radius="30sp"
+        android:text="Forgot Username"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="211dp" />
+
+    <Button
+        android:id="@+id/forgotpass"
+        android:layout_width="182dp"
+        android:layout_height="48dp"
+        android:background="@drawable/button_background_green"
+        android:radius="30sp"
+        android:text="Forgot Password"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="213dp"
+        tools:layout_editor_absoluteY="211dp" />
+
+    <TextView
+        android:id="@+id/reset_your"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_your"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="94dp" />
+
+    <TextView
+        android:id="@+id/Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textColor="@color/darkgrey"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="134dp" />
+
+    <Button
+        android:id="@+id/placeholderbtn"
+        android:layout_width="55dp"
+        android:layout_height="54dp"
+        android:background="@mipmap/ic_launcher_foreground2"
+        tools:layout_editor_absoluteX="178dp"
+        tools:layout_editor_absoluteY="205dp" />
+
+    <ImageView
+        android:id="@+id/blackbgd"
+        android:layout_width="355dp"
+        android:layout_height="114dp"
+        app:srcCompat="@drawable/blackbackground"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="275dp" />
+
+    <TextView
+        android:id="@+id/textonlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_email"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColorLink="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="11sp"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="368dp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="340dp"
+        android:layout_height="212dp"
+        app:srcCompat="@mipmap/ic_launcher_updatedlogo"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="214dp" />
+
+    <ImageView
+        android:id="@+id/enteremail"
+        android:layout_width="355dp"
+        android:layout_height="90dp"
+        app:srcCompat="@drawable/goldbackground"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="408dp" />
+
+    <ImageView
+        android:id="@+id/emailsent"
+        android:layout_width="355dp"
+        android:layout_height="90dp"
+        app:srcCompat="@drawable/goldbackground"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="518dp" />
+
+
+    <View
+        android:id="@+id/view300"
+        android:layout_width="3dp"
+        android:layout_height="31dp"
+        android:background="@drawable/textinput"
+        tools:layout_editor_absoluteX="327dp"
+        tools:layout_editor_absoluteY="440dp" />
+
+    <View
+        android:id="@+id/view19"
+        android:layout_width="250dp"
+        android:layout_height="3dp"
+        android:background="@drawable/textinput"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="468dp" />
+
+    <View
+        android:id="@+id/view17"
+        android:layout_width="250dp"
+        android:layout_height="3dp"
+        android:background="@drawable/textinput"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="440dp" />
+
+    <View
+        android:id="@+id/view18"
+        android:layout_width="3dp"
+        android:layout_height="31dp"
+        android:background="@drawable/textinput"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="440dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="244dp"
+        android:layout_height="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/view19"
+        app:layout_constraintEnd_toStartOf="@+id/view300"
+        app:layout_constraintStart_toEndOf="@+id/view18"
+        app:layout_constraintTop_toBottomOf="@+id/view17"/>
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/email"
+        android:layout_width="247dp"
+        android:layout_height="38dp"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="440dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-Mail"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="421dp" />
+</android.support.constraint.ConstraintLayout>
